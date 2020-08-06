@@ -35,3 +35,33 @@ console.log(add(... numbers));
 
 console.log(`FIrst Name: ${userDetails.firstName}, User Name: ${userDetails.userName}`);
 
+
+// Destructure with object
+
+let {firstName:fName,lastName:lName} = user;
+console.log(fName);
+console.log(lName);
+
+// Destructure with Array
+
+let [ Apple, Burger, Fry ] = fruits;
+console.log(Apple);
+console.log(Burger);
+
+// Rest
+
+let [justApple, ... restEdibles] = edibles;
+console.log(justApple);
+console.log(restEdibles);
+
+let {firstName, ... restuserDetails} = userDetails;
+console.log(firstName);
+console.log(restuserDetails);
+
+function getEdibles(apple?, ... restEdibles){
+    console.log(apple);
+console.log(restEdibles);
+}
+
+getEdibles(... edibles);
+
