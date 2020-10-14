@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "tsc interfaces.ts -w --target ES5",
+    "start": "tsc arrows.ts -w --target ES5",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "TanvirIqbal",
